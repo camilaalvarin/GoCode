@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --- NAVBAR --- */
+
+nav {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav a, footer a, .descarga a, .redes a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px 5px;
+}
+
+.navbar {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.indexA {
+    /* padding-top: 15px; */
+    margin-left: 10px;
+}
+
+/* --- NAVBAR --- */
+
+/* --- INDEX --- */
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index p, .descarga p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.index h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    position: static;
+    bottom: 0;
+}
+
+.descarga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- FIN INDEX --- */
+
+
+/* --- CARD --- */
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 260px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    transition: all 0.2s;
+    box-shadow: -9px 10px 21px -8px rgba(0,0,0,0.74);
+}
+
+.Card:hover {
+    transform: scale(1.05);
+}
+
+.Card .text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.Card .general {
+    font-size: 14px;
+    padding: 2px;
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+}
+
+.Card .css {
+    font-size: 14px;
+    padding: 2px;
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #2862e9;
+    color: white;
+}
+
+.Card .html {
+    font-size: 14px;
+    padding: 2px;
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #dd4b25;
+    color: white;
+}
+
+.Card .github {
+    font-size: 14px;
+    padding: 2px;
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#requisitos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.flex {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* --- FIN CARD --- */
+
+
+/* --- REQUISITOS --- */
+
+#CSS:checked ~ #requisitos .f-github, #CSS:checked ~ #requisitos .f-general, #CSS:checked ~ #requisitos .f-html {
+    display: none;
+}
+
+#HTML:checked ~ #requisitos .f-css, #HTML:checked ~ #requisitos .f-general, #HTML:checked ~ #requisitos .f-github {
+    display: none;
+}
+
+#Github:checked ~ #requisitos .f-css, #Github:checked ~ #requisitos .f-general, #Github:checked ~ #requisitos .f-html, #Github:checked ~ #requisitos .f-css-html {
+    display: none;
+}
+
+#General:checked ~ #requisitos .f-css, #General:checked ~ #requisitos .f-github, #General:checked ~ #requisitos .f-html, #General:checked ~ #requisitos .f-css-html {
+    display: none;
+}
+
+input {
+    opacity: 0;
+}
+
+input:checked + label {
+    font-weight: bolder;
+}
+
+label {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label:hover {
+    font-weight: bolder;
+}
+
+#todo {
+    margin-left: 410px;
+}
+
+.requisitosH1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.requisitosP {
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marginP {
+    margin-bottom: 60px;
+}
+
+/* --- FIN REQUISITOS --- */
+
+/* --- CONTENIDOS --- */
+
+.contenidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidos h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- CARROUSEL --- */
+
+#conteItemsCarrousel {
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 360px;
+    overflow: hidden;
+}
+
+.itemCarrousel {
+    /* border: 1px solid black; */
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrousel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flechasCarrousel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flechasCarrousel i {
+    color: black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* #tarjeta-1 {
+    background-color: #e96c4d;
+}
+
+#tarjeta-2 {
+    background-color: rgb(158, 90, 221);
+}
+
+#tarjeta-3 {
+    background-color: rgb(80, 220, 220);
+} */
+
+.tarjetaCarrousel img {
+    /* width: 200px; */
+    height: 250px;
+}
+
+
+/* --- FIN CARROUSEL --- */
+
+
+/* --- FIN CONTENIDOS --- */
+
+/* --- ALUMNA --- */
+
+.fa-whatsapp {
+    color: 	#25D366;
+}
+
+.fa-linkedin-in {
+    color: 	#0e76a8;
+}
+
+.fa-envelope {
+    color: 	#db4a39;
+}
+/* --- FIN ALUMNA --- */
