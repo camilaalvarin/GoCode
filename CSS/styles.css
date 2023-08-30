@@ -39,10 +39,15 @@ nav a, footer a, .descarga a, .redes a {
 /* --- INDEX --- */
 
 .index {
+    height: 650px;
     display: flex;
+    margin-top: -20px;
+    margin-bottom: -20px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    text-align: center;
+    /* border: 2px solid red; */
 }
 
 .index p, .descarga p {
@@ -50,7 +55,7 @@ nav a, footer a, .descarga a, .redes a {
     font-size: 17px;
 }
 
-.index h1, h2 {
+.index h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -226,12 +231,24 @@ label:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .contenidos h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.contenidos h3 {
+    color: #ff8e32;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenidos p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 5px;
 }
 
 /* --- CARROUSEL --- */
@@ -272,20 +289,7 @@ label:hover {
     padding-left: 5px;
 }
 
-/* #tarjeta-1 {
-    background-color: #e96c4d;
-}
-
-#tarjeta-2 {
-    background-color: rgb(158, 90, 221);
-}
-
-#tarjeta-3 {
-    background-color: rgb(80, 220, 220);
-} */
-
 .tarjetaCarrousel img {
-    /* width: 200px; */
     height: 250px;
 }
 
@@ -297,15 +301,68 @@ label:hover {
 
 /* --- ALUMNA --- */
 
-.fa-whatsapp {
+.flexx {
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.alumna {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.alumna .descripcion {
+    width: 65%;
+}
+
+.alumna img {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.alumna p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 8px;
+}
+
+.redes {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes .fa-whatsapp {
+    font-size: 70px;
     color: 	#25D366;
 }
 
-.fa-linkedin-in {
+.redes .fa-linkedin-in {
+    font-size: 70px;
     color: 	#0e76a8;
 }
 
-.fa-envelope {
+.redes .fa-envelope {
+    font-size: 70px;
     color: 	#db4a39;
+}
+
+.redes .fa-instagram {
+    font-size: 70px;
+    color: 	#c51d34;
+}
+
+.redes .fa-github, .redes .fa-link {
+    font-size: 70px;
 }
 /* --- FIN ALUMNA --- */
