@@ -7,11 +7,12 @@
 /* --- NAVBAR --- */
 
 nav {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     position: sticky;
     top: 0;
 }
@@ -20,7 +21,15 @@ nav a, footer a, .descarga a, .redes a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    padding: 10px 5px;
+    padding: 15px 5px;
+}
+
+nav a {
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    color: rgba(240, 66, 80, 0.822);
 }
 
 .navbar {
@@ -34,40 +43,87 @@ nav a, footer a, .descarga a, .redes a {
     margin-left: 10px;
 }
 
+.fa-code {
+    color: rgba(240, 66, 80, 0.822);
+}
+
 /* --- NAVBAR --- */
 
 /* --- INDEX --- */
+.backgound {
+
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #000000b9, #1c1c1cde), url(../Media/code.jpg);
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: -20px;
+}
 
 .index {
-    height: 650px;
+    width: 65%;
+    height: fit-content;
     display: flex;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    /* margin-top: -20px; */
+    /* margin-bottom: -20px; */
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    /* border: 2px solid red; */
+    padding-bottom: 25px;
+    
+    /* background-image: linear-gradient(
+        to right, hsla(248, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.7)
+     ),  
+     url(../Media/code.jpg); */
+
+    /* background-image: linear-gradient(
+        to right, hsla(248, 44%, 36%, 0.6), hsla(317, 14%, 20%, 0.7)
+     ),  
+     url(../Media/code.jpg); */
+
+     /* background-image: linear-gradient(to bottom, #000000a9, #1c1c1cde), url(../Media/code.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px); */
 }
 
-.index p, .descarga p {
+.index p, .descarga p, .descarga a  {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.75rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .index h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
 }
 
-.index a {
+.index a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    /* color: black; */
+    color: whitesmoke;
+}
+
+/* .index a:hover {
+    color: rgba(240, 66, 80, 0.822);
+} */
+
+.index i {
+    color: rgba(240, 66, 80, 0.822);
 }
 
 footer {
     width: 100%;
-    border: 2px solid black;
+    background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -76,10 +132,21 @@ footer {
     bottom: 0;
 }
 
+footer a, footer p {
+    color: #FFFFFF;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .descarga {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    padding-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* --- FIN INDEX --- */
@@ -94,7 +161,8 @@ footer {
     text-align: center;
     width: 260px;
     height: 120px;
-    border: 2px solid black;
+    border: 2px solid black
+    ;
     border-radius: 15px;
     margin: 20px;
     transition: all 0.2s;
@@ -196,6 +264,7 @@ label {
     cursor: pointer;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    /* color: #f04250d2; */
 }
 
 label:hover {
@@ -226,29 +295,51 @@ label:hover {
 
 /* --- CONTENIDOS --- */
 
+.contenidosBg {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #000000ec, #1c1c1cf1), url(../Media/mbackground.jpg);
+    
+}
+
 .contenidos {
+    width: 65%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    /* background-image: linear-gradient(
+        to right, hsla(248, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.7)
+     ),  
+     url(../Media/code.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to bottom, #000000b9, #1c1c1cde); */
 }
 
 .contenidos h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: #FFFFFF;
     margin-bottom: 50px;
 }
 
-.contenidos h3 {
-    color: #ff8e32;
+.contenidos h3, .contenidos h2 {
+    color: rgba(240, 66, 80, 0.822);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .contenidos p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    margin: 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.75rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
 }
 
 /* --- CARROUSEL --- */
@@ -304,7 +395,7 @@ label:hover {
 .flexx {
     width: 100%;
     height: 500px;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -316,6 +407,7 @@ label:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border: 1px solid black;
 }
 
 .alumna .descripcion {
@@ -333,6 +425,11 @@ label:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 8px;
+
+    line-height: 1.75rem;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+
 }
 
 .redes {
@@ -366,3 +463,59 @@ label:hover {
     font-size: 70px;
 }
 /* --- FIN ALUMNA --- */
+
+/* --- PERFIL DEL GRADUADO --- */
+
+.perfilBg {
+    display: flex;
+    justify-content: center;
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: -20px;
+    background-image: linear-gradient(to bottom, #000000b9, #1c1c1cde), url(../Media/perfilg.webp);
+}
+
+.perfilGraduado {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.perfilGraduado h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #FFFFFF;;
+}
+
+.perfilGraduado h3 {
+    color: rgba(240, 66, 80, 0.822);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.perfilGraduado p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.75rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+/* --- FIN PERFIL DEL GRADUADO --- */
+
+i {
+    transition: all 0.2s;
+}
+i:hover {
+    transform: scale(1.04);
+}
